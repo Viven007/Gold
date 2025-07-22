@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Simple Website</h1>
+  <p>Click the button to see a message:</p>
+  <button onclick="showMessage()">Click Me</button>
+  <div id="output"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("output").textContent = "Hello from your website!";
+    }
+  </script>
+</body>
+</html>
